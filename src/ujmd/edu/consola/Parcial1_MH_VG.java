@@ -6,6 +6,7 @@
 package ujmd.edu.consola;
 
 import ujmd.edu.clases.EcuaciónCuadratica;
+import ujmd.edu.clases.Notas;
 import java.util.Scanner;
 
 /**
@@ -16,6 +17,7 @@ public class Parcial1_MH_VG {
 
     public static void main(String[] args) {
         EcuaciónCuadratica ecuacion = new EcuaciónCuadratica();
+        Notas notas = new Notas();
         Scanner reader = new Scanner(System.in);
         int seleccion = 0;
         System.out.println("\n*****************BIENVENIDO AL MENU DE OPCIONES*****************");
@@ -38,7 +40,7 @@ public class Parcial1_MH_VG {
 
                         break;
                     case 3:
-
+                        notas.DigitarNotas();
                         break;
                     case 4:
                         System.out.println("Cerrando sesión... ¡Regresa pronto!");
